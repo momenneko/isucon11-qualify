@@ -1,0 +1,114 @@
+GIT
+  remote: https://github.com/sorah/hako
+  revision: fde50cf64160b2895967a6762042ca642baf9e59
+  ref: tlsnlb
+  specs:
+    hako (2.13.0)
+      aws-sdk-applicationautoscaling
+      aws-sdk-autoscaling
+      aws-sdk-cloudwatch
+      aws-sdk-cloudwatchlogs
+      aws-sdk-ec2
+      aws-sdk-ecs (>= 1.54.0)
+      aws-sdk-elasticloadbalancing
+      aws-sdk-elasticloadbalancingv2
+      aws-sdk-s3
+      aws-sdk-servicediscovery
+      aws-sdk-sns
+      aws-sdk-ssm
+      jsonnet
+
+GIT
+  remote: https://github.com/sorah/hako-github_status
+  revision: bcba198aebcaaa8aebbf9728f01e3aaa3567f8a3
+  specs:
+    hako-github_status (0.0.1)
+      hako
+      jwt
+      octokit
+
+PATH
+  remote: deployment
+  specs:
+    isux_hako_deployment (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    aws-eventstream (1.1.0)
+    aws-partitions (1.366.0)
+    aws-sdk-applicationautoscaling (1.45.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-autoscaling (1.45.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-cloudwatch (1.43.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-cloudwatchlogs (1.36.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-core (3.105.0)
+      aws-eventstream (~> 1, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.239.0)
+      aws-sigv4 (~> 1.1)
+      jmespath (~> 1.0)
+    aws-sdk-ec2 (1.193.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-ecs (1.68.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-elasticloadbalancing (1.27.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-elasticloadbalancingv2 (1.50.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-kms (1.37.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.79.1)
+      aws-sdk-core (~> 3, >= 3.104.3)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-servicediscovery (1.28.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-sns (1.30.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-ssm (1.89.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
+      aws-sigv4 (~> 1.1)
+    aws-sigv4 (1.2.2)
+      aws-eventstream (~> 1, >= 1.0.2)
+    faraday (1.0.1)
+      multipart-post (>= 1.2, < 3)
+    jmespath (1.4.0)
+    jsonnet (0.3.0)
+      mini_portile2 (>= 2.2.0)
+    jwt (2.2.1)
+    mini_portile2 (2.5.0)
+    multipart-post (2.1.1)
+    octokit (4.18.0)
+      faraday (>= 0.9)
+      sawyer (~> 0.8.0, >= 0.5.3)
+    public_suffix (4.0.5)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hako!
+  hako-github_status!
+  isux_hako_deployment!
+
+BUNDLED WITH
+   2.1.4
