@@ -31,4 +31,4 @@ webapp/php/
 webapp/python/
 webapp/ruby/
 webapp/rust/
-
+.mysql_history

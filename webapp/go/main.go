@@ -550,14 +550,17 @@ func postIsu(c echo.Context) error {
 
 	if useDefaultImage {
 		image, err = ioutil.ReadFile(defaultIconFilePath)
+	fmt.Println("userDefaultImage=true---")
 		if err != nil {
 			c.Logger().Error(err)
 			return c.NoContent(http.StatusInternalServerError)
 		}
 	} else {
 		file, err := fh.Open()
+		fmt.Println("false, opened")
 		if err != nil {
 			c.Logger().Error(err)
+			fmt.Println("一個目のエラー")
 			return c.NoContent(http.StatusInternalServerError)
 		}
 		defer file.Close()
