@@ -17,6 +17,7 @@
 .bash_history
 .zsh_history
 .lesshst
+.gitconfig
 env.sh
 local/ruby/
 local/node/
@@ -30,4 +31,4 @@ webapp/php/
 webapp/python/
 webapp/ruby/
 webapp/rust/
-bench/
+
