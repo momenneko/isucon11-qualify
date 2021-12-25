@@ -128,9 +128,9 @@ func (s *Scenario) postActivate(c echo.Context) error {
 		// FQDN が競技者 VM のものでない場合 400 を返す
 		fqdn = targetBaseURL.Hostname()
 		ipAddr, ok := s.GetIPAddrFromFqdn(fqdn)
-		if !ok {
-			return http.StatusBadRequest, "Bad URL: hostname must be isucondition-[1-3].t.isucon.dev"
-		}
+		// if !ok {
+		// 	return http.StatusBadRequest, "Bad URL: hostname must be isucondition-[1-3].t.isucon.dev"
+		// }
 		//httpsモードの際はportは指定なしのみ
 		port := targetBaseURL.Port()
 		if s.UseTLS && port != "" {
