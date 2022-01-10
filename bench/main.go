@@ -89,7 +89,6 @@ func init() {
 
 	var targetableAddressesStr string
 
-	
 	flag.StringVar(&targetAddress, "target", "localhost:3000", "ex: localhost:9292")
 	fmt.Println(targetAddress)
 	// TODO: benchrun.GetAllAddresses で環境変数を読み込む (isucon/isucon11-portal#167)
@@ -103,7 +102,7 @@ func init() {
 	flag.BoolVar(&showVersion, "version", false, "show version and exit 1")
 
 	var jiaServiceURLStr, timeoutDuration, initializeTimeoutDuration string
-	flag.StringVar(&jiaServiceURLStr, "jia-service-url", getEnv("JIA_SERVICE_URL", "http://localhost:5000"), "jia service url")
+	flag.StringVar(&jiaServiceURLStr, "jia-service-url", getEnv("JIA_SERVICE_URL", "http://apitest:5000"), "jia service url")
 	flag.StringVar(&timeoutDuration, "timeout", "1s", "request timeout duration")
 	flag.StringVar(&initializeTimeoutDuration, "initialize-timeout", "20s", "request timeout duration of POST /initialize")
 
